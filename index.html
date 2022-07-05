@@ -9,10 +9,10 @@
     <meta name="author" content="Pritam Sau">
     <!-- description -->
     <meta name="description"
-        content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
+        content="">
     <!-- keywords -->
     <meta name="keywords"
-        content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
+        content="">
     <!-- Page Title -->
     <title>Pritam Sau</title>
     <!-- Favicon -->
@@ -123,6 +123,18 @@
         .port-content p {
             display: none;
         }
+.blocks{
+    display: none;
+}
+
+        @media (max-width: 690px) {
+            body{
+                overflow: hidden;
+            }
+            .blocks{
+                display:inline-block;
+            }
+        }
     </style>
 </head>
 
@@ -194,7 +206,8 @@
                     </a>
                 </li>
                 <style>
-                    #clients,#clients-li {
+                    #clients,
+                    #clients-li {
                         display: none;
                     }
                 </style>
@@ -226,48 +239,51 @@
 
     </header>
     <!-- Header End -->
+    <div class="bottomBar">
+        <div class="sc-bottom-bar">
 
-    <div class="sc-bottom-bar">
-
-        <a class="sc-menu-item pt-trigger" data-animation="59" data-goto="2" href="#about" style="left: -4px ;">
-            <!-- <i class="fas fa-list"></i> -->
-            <img src="icon/7.png" alt="about">
-            <br>
-            <span style="font-size:12px ; position: relative; top: -10px;">About</span>
-
-
-        </a>
-
-        <a class="sc-menu-item pt-trigger" data-animation="59" data-goto="4" href="#portfolio" style="left: -12px ;">
-            <!-- <i class="fas fa-list"></i> -->
-            <img src="icon/13.png" alt="portfolio">
-            <br>
-            <span style="font-size:12px ; position: relative; top: -10px;">Portfolio</span>
-
-        </a>
-        <a class="sc-menu-item sc-current pt-trigger" data-animation="58" data-goto="1" href="#home"
-            style="left: -5px ;">
-            <!-- <i class="fas fa-home"></i> -->
-            <img src="icon/14.png" alt="home">
-            <br>
-            <span style="font-size:12px ; position: relative; top: -10px;">Home</span>
-        </a>
-        <a class="sc-nav-indicator">
-        </a>
-        <a class="sc-menu-item pt-trigger" data-animation="59" data-goto="7" href="#blog">
-            <img src="icon/5.png" alt="contact">
-            <br>
-            <span style="font-size:12px ; position: relative; top: -10px;">Blog</span>
-        </a>
-        <a class="sc-menu-item pt-trigger" data-animation="61" data-goto="6" href="#contact" style="left: -11px;">
-            <!-- <i class="fas fa-calendar-alt"></i> -->
-            <img src="icon/9.png" alt="contact">
-            <br>
-            <span style="font-size:12px ; position: relative; top: -10px;">Contact</span>
-        </a>
+            <a class="sc-menu-item pt-trigger" data-animation="59" data-goto="2" href="#about" style="left: -4px ;">
+                <!-- <i class="fas fa-list"></i> -->
+                <img src="icon/7.png" alt="about">
+                <br>
+                <span style="font-size:12px ; position: relative; top: -10px;">About</span>
 
 
+            </a>
+
+            <a class="sc-menu-item pt-trigger" data-animation="59" data-goto="4" href="#portfolio"
+                style="left: -12px ;">
+                <!-- <i class="fas fa-list"></i> -->
+                <img src="icon/13.png" alt="portfolio">
+                <br>
+                <span style="font-size:12px ; position: relative; top: -10px;">Portfolio</span>
+
+            </a>
+            <a class="sc-menu-item sc-current pt-trigger" data-animation="58" data-goto="1" href="#home"
+                style="left: -5px ;">
+                <!-- <i class="fas fa-home"></i> -->
+                <img src="icon/14.png" alt="home">
+                <br>
+                <span style="font-size:12px ; position: relative; top: -10px;">Home</span>
+            </a>
+            <a class="sc-nav-indicator">
+            </a>
+            <a class="sc-menu-item pt-trigger" data-animation="61" data-goto="3" href="#services">
+                <img src="icon/8.png" alt="services" style="  position: relative; right: 10px;">
+                <br>
+                <span style="font-size:12px ; position: relative; top: -10px; right: 10px;">Services</span>
+            </a>
+            <a class="sc-menu-item pt-trigger" data-animation="61" data-goto="6" href="#contact" style="left: -11px;">
+                <!-- <i class="fas fa-calendar-alt"></i> -->
+                <img src="icon/9.png" alt="contact">
+                <br>
+                <span style="font-size:12px ; position: relative; top: -10px;">Contact</span>
+            </a>
+
+
+        </div>
     </div>
+
 
 
     <!-- Site Main -->
@@ -309,8 +325,6 @@
                                         themes — turns out hacking together a custom reblog button taught me a lot about
                                         HTML, CSS & JAVASCRIPT!
                                     </p>
-
-
                                     <a href="https://bit.ly/3y2o37F" target="_blank" data-text="Read More"
                                         class="btn btn-green btn-medium btn-rounded" cursor-class="arrow">Digital CV</a>
                                 </div>
@@ -353,8 +367,15 @@
                                         with the amazing team at DWEB Consultants and am getting into many projects on
                                         my own time.
                                     </p>
+                                    <br>
+
+                                
+                                    <a data-animation="59" data-goto="7" href="#blog" class="btn btn-green btn-medium btn-rounded pt-trigger  blocks" cursor-class="arrow"><img src="icon/5.png" alt="contact" cursor-class="arrow"> <br> My Blogs</a>
                                 </div>
                             </div>
+
+
+
 
                             <!-- Features Box-->
                             <div class="col-lg-6">

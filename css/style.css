@@ -1657,7 +1657,7 @@ blockquote>cite {
     }
 
     .pt-page {
-        padding: 8rem 0 15rem;
+        padding: 8rem 0 10rem;
     }
 
     .heading-box h2 {
@@ -1890,7 +1890,7 @@ img.vert-move {
     display: none;
     padding: 10px 36px;
     justify-content: space-between;
-    width: 400px;
+    width: 100%;
     margin: auto;
     /* top:0; */
     left: 0;
@@ -1946,3 +1946,4 @@ img.vert-move {
 
     }
 }
+
