@@ -8,11 +8,9 @@
     <!-- Author -->
     <meta name="author" content="Pritam Sau">
     <!-- description -->
-    <meta name="description"
-        content="">
+    <meta name="description" content="">
     <!-- keywords -->
-    <meta name="keywords"
-        content="">
+    <meta name="keywords" content="">
     <!-- Page Title -->
     <title>Pritam Sau</title>
     <!-- Favicon -->
@@ -123,16 +121,55 @@
         .port-content p {
             display: none;
         }
-.blocks{
-    display: none;
-}
 
+        .blocks {
+            display: none;
+        }
+
+    
+
+        .sos-ul {
+            display: flex;
+            position: absolute;
+            display: flex;
+            width: 200px;
+            bottom: 3em;
+            justify-content: space-between;
+        }
+
+        .sos-ul li {
+            list-style: none;
+        }
+
+        .fab {
+            color: #fff;
+            font-size: 30px;
+            transition: 0.8s;
+            margin: 10px;
+        }
+
+        .fab:hover {
+            color: #fff;
+            font-size: 30px;
+            transform: scale(1.5);
+
+        }
+        .btn{
+            transition: 0.6s;
+        }
+        .btn:hover{
+            transform: scale(1.1);
+        }
         @media (max-width: 690px) {
-            body{
+            body {
                 overflow: hidden;
             }
-            .blocks{
-                display:inline-block;
+
+            .blocks {
+                display: inline-block;
+            }
+            .sos-ul{
+                bottom: -3em;
             }
         }
     </style>
@@ -161,12 +198,12 @@
     <header class="header-left">
 
         <!--Logo-->
-        <a class="logo" href="/">
+        <a class="logo" href="index.html">
             <h1 class="logo-text img-fluid"><img src="img/duke2.jpg" alt="logo" class="log"></h1>
         </a>
 
         <!--Hamburger-->
-        <a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle">
+        <a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle" style="display: none;">
             <span></span>
             <span></span>
             <span></span>
@@ -219,19 +256,20 @@
                     </a>
                 </li>
                 <li>
-                    <a class="pt-trigger" data-animation="61" data-goto="6" href="#contact">
-                        <!-- <i class="lni-licencse"></i> -->
-                        <img src="icon/9.png" alt="contact" cursor-class="arrow">
-                        <span>Contact</span>
-                    </a>
-                </li>
-                <li>
                     <a class="pt-trigger" data-animation="59" data-goto="7" href="#blog">
                         <!-- <i class="lni-licencse"></i> -->
                         <img src="icon/5.png" alt="contact" cursor-class="arrow">
                         <span>Blog</span>
                     </a>
                 </li>
+                <li>
+                    <a class="pt-trigger" data-animation="61" data-goto="6" href="#contact">
+                        <!-- <i class="lni-licencse"></i> -->
+                        <img src="icon/9.png" alt="contact" cursor-class="arrow">
+                        <span>Contact</span>
+                    </a>
+                </li>
+
             </ul>
             <!-- /Main menu -->
 
@@ -327,6 +365,9 @@
                                     </p>
                                     <a href="https://bit.ly/3y2o37F" target="_blank" data-text="Read More"
                                         class="btn btn-green btn-medium btn-rounded" cursor-class="arrow">Digital CV</a>
+
+
+
                                 </div>
                             </div>
 
@@ -369,8 +410,11 @@
                                     </p>
                                     <br>
 
-                                
-                                    <a data-animation="59" data-goto="7" href="#blog" class="btn btn-green btn-medium btn-rounded pt-trigger  blocks" cursor-class="arrow"><img src="icon/5.png" alt="contact" cursor-class="arrow"> <br> My Blogs</a>
+
+                                    <a data-animation="59" data-goto="7" href="#blog"
+                                        class="btn btn-green btn-medium btn-rounded pt-trigger  blocks"
+                                        cursor-class="arrow"><img src="icon/5.png" alt="contact" cursor-class="arrow">
+                                        <br> My Blogs</a>
                                 </div>
                             </div>
 
@@ -380,6 +424,19 @@
                             <!-- Features Box-->
                             <div class="col-lg-6">
                                 <div class="row d-flex align-items-lg-center">
+                                    <div class="col-md-6 p-0">
+                                        <!-- Feature Item -->
+                                        <div class="feature-item">
+                                            <!-- <i class="lni-graduation f-icon"></i> -->
+                                            <img src="icon/15.png" alt="">
+                                            <h5 class="title">UI / UX Design</h5>
+                                            <p>Design creates culture. Culture shapes values. Values determine the
+                                                future.</p>
+                                            <p class="text-right"> <img src="icon/17.png" alt=""></p>
+
+                                            <!-- <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a> -->
+                                        </div>
+                                    </div>
                                     <div class="col-md-6 order-lg-2 p-0">
                                         <!-- Feature Item -->
                                         <div class="feature-item">
@@ -401,19 +458,7 @@
                                             <p class="text-right"> <img src="icon/17.png" alt=""></p>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 p-0">
-                                        <!-- Feature Item -->
-                                        <div class="feature-item">
-                                            <!-- <i class="lni-graduation f-icon"></i> -->
-                                            <img src="icon/15.png" alt="">
-                                            <h5 class="title">UI / UX Design</h5>
-                                            <p>Design creates culture. Culture shapes values. Values determine the
-                                                future.</p>
-                                            <p class="text-right"> <img src="icon/17.png" alt=""></p>
 
-                                            <!-- <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a> -->
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
@@ -944,8 +989,21 @@
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116545.06510064121!2d88.12457782538912!3d24.10032493544785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f97dd5c0281a4d%3A0xcde56981df08cd8!2sBerhampore%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1656330162855!5m2!1sen!2sin"
                                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade" class="bg-map-iframe"></iframe>
+                                        referrerpolicy="no-referrer-when-downgrade" class="bg-map-iframe">
+                                    </iframe>
+
+
+                                    <ul class="sos-ul">
+                                        <li><a href="www.linkedin.com/in/pritam-show" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/dukeputu" target="_blank"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="https://www.facebook.com/pritham.sau" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a href="youtube.com"  target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+
                                 </div>
+
+
+
                             </div>
                         </div>
                     </div>
@@ -1131,12 +1189,12 @@
             }).then(
                 message => {
                     if (message == 'OK') {
-                        alert('suss');
+                        alert('We Together Make Difference Thank You :)');
 
                     }
                     else {
                         console.error(message);
-                        alert('not suss')
+                        alert('Not Send')
                     }
                 }
 
